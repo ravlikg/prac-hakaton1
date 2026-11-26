@@ -1,0 +1,60 @@
+{
+  // --- РОБОТА З ФАЙЛАМИ ТА РЕДАКТОРОМ ---
+  // Автоматично форматувати код під час збереження (Ctrl + S)
+// 1. Вмикаємо автоформатування при збереженні
+  "editor.formatOnSave": false,
+
+  // 2. Вказуємо форматувальник C++ за замовчуванням
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+
+  // 3. Перемикаємо рушій форматування на вбудований vcFormat
+  "C_Cpp.formatting": "vcFormat",
+
+  // --- НАЛАШТУВАННЯ СТИЛЮ (Google Style + 4 пробіли) ---
+
+  // Відступ у 4 пробіли для табуляції
+  "editor.tabSize": 4,
+  "C_Cpp.vcFormat.indent.braces": false,
+
+  // Усі відкриваючі дужки { залишаються НА ТОМУ Ж РЯДКУ (sameLine)
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.type": "sameLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.lambda": "sameLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace": "sameLine",
+  "C_Cpp.vcFormat.newLine.beforeElse": false,
+  "C_Cpp.vcFormat.newLine.beforeCatch": false,
+  "editor.rulers": [100],
+
+  // Пробіл перед відкриваючою дужкою ( e.g. "if (...) {" )
+  "C_Cpp.vcFormat.space.beforeControlBlockOpenFileBrace": true,
+  "C_Cpp.vcFormat.space.beforeFunctionOpenFileBrace": true,
+  "C_Cpp.vcFormat.space.beforeTypeOpenFileBrace": true,
+
+  // Форматування класів (public/private зсуваються вліво, як у Google Style)
+  "C_Cpp.vcFormat.indent.accessSpecifiers": false,
+
+  // Вказівники та посилання липнуть до типу (int* p замість int *p)
+  "C_Cpp.vcFormat.space.pointerReferenceAlignment": "left",
+
+  // Автоматично видаляти зайві пробіли в кінці рядків при збереженні
+  "files.trimTrailingWhitespace": true,
+
+  // Підсвічувати парні дужки різними кольорами
+  "editor.bracketPairColorization.enabled": true,
+
+  // Особисті налаштування вигляду (перенос рядків, мінікарта, лігатури)
+  // кожен задає у своїх User Settings, а не тут.
+
+  // --- РОЗШИРЕННЯ ТА ІНСТРУМЕНТИ ---
+  // Запускати Code Runner у вбудованому терміналі (дозволяє використовувати input / cin)
+  "code-runner.runInTerminal": true,
+
+  // Очищати термінал перед кожним новим запуском Code Runner
+  "code-runner.clearPreviousOutput": true,
+
+  // Автоматично зберігати відкритий файл перед запуском через Code Runner
+  "code-runner.saveFileBeforeRun": true
+}
