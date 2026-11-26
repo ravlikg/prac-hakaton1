@@ -1,0 +1,98 @@
+# ===== Збірка =====
+build/
+build-*/
+cmake-build-*/
+out/
+bin/
+obj/
+Debug/
+Release/
+x64/
+x86/
+
+# ===== CMake =====
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+install_manifest.txt
+compile_commands.json
+_deps/
+Testing/
+
+# ===== Make / Ninja =====
+.ninja_deps
+.ninja_log
+build.ninja
+
+# ===== Об'єктні файли та бібліотеки =====
+*.o
+*.obj
+*.lo
+*.slo
+*.ko
+*.a
+*.lib
+*.la
+*.lai
+*.so
+*.so.*
+*.dylib
+*.dll
+*.gch
+*.pch
+
+# ===== Виконувані файли =====
+*.exe
+*.out
+*.app
+a.out
+
+# ===== Налагодження =====
+*.dSYM/
+*.pdb
+*.ilk
+*.idb
+*.su
+*.gcno
+*.gcda
+*.gcov
+core
+core.*
+vgcore.*
+
+# ===== Редактори та IDE =====
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.iml
+.vs/
+*.sln.docstates
+*.suo
+*.user
+*.VC.db
+*.VC.opendb
+*.swp
+*.swo
+*~
+.cache/
+.clangd/
+
+# ===== Системні файли =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Секрети =====
+.env
+.env.*
+!.env.example
+
+# ===== Локальні матеріали (не для репозиторію) =====
+materials/
+
+# Мітки Windows, що з'являються при копіюванні файлів у WSL
+*:Zone.Identifier
