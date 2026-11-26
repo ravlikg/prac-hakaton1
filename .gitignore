@@ -90,3 +90,9 @@ desktop.ini
 .env
 .env.*
 !.env.example
+
+# ===== Локальні матеріали (не для репозиторію) =====
+materials/
+
+# Мітки Windows, що з'являються при копіюванні файлів у WSL
+*:Zone.Identifier
