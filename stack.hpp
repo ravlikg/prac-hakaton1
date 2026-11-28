@@ -1,2 +1,4 @@
+#pragma once
+
 #include <iostream>
-#inlcude "list.hpp"
+#include "list.hpp"
