@@ -1,5 +1,4 @@
-#ifndef STRUCTURES_HPP
-#define STRUCTURES_HPP
+#pragma once
 
 #include <iostream>
 #include <iomanip>
@@ -37,5 +36,3 @@ inline std::ostream& operator<<(std::ostream& os, const Product& p) {
        << p.quantity << " шт.";
     return os;
 }
-
-#endif
